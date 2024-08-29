@@ -298,6 +298,7 @@ To create the dash board we need to activate the dash app, which helps us create
 
 # Activating Dash app
 app = dash.Dash(__name__)
+server = app.server
 
 """# Creating and Styling Dashboard
 
@@ -577,6 +578,7 @@ To make predictions on the probability of a customer leaving the bank, we made a
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
+server = app.server
 
 # App Layout
 app.layout = html.Div(style={'backgroundColor': '#f9f9f9', 'fontFamily': 'Arial, sans-serif', 'padding': '50px'}, children=[
